@@ -7,7 +7,12 @@ export const SITE = {
   github: 'https://github.com/AbhinavMuthyala19',
 }
 
-// Featured work links. The PDF lives in /public/case-study.pdf.
+// Featured work. The PDF lives in /public/case-study.pdf.
 export const CASE_STUDY_URL = '/case-study.pdf'
-// TODO: replace with the live demo URL before launch.
-export const DEMO_URL = 'DEMO_URL'
+
+// Demo walkthrough video (YouTube).
+export const DEMO_VIDEO_ID = 'LtNGcquu0fk'
+export const DEMO_VIDEO_URL = `https://www.youtube.com/watch?v=${DEMO_VIDEO_ID}`
+export const DEMO_VIDEO_EMBED = `https://www.youtube-nocookie.com/embed/${DEMO_VIDEO_ID}?rel=0`
+
+export const MAILTO = `mailto:${SITE.email}`

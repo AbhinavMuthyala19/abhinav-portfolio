@@ -1,0 +1,93 @@
+/* Design tokens. Values follow docs/website-design-reference (01_DESIGN_SYSTEM, 06_IMPLEMENTATION_GUIDE). */
+:root {
+  /* colour */
+  --bg: #000;
+  --surface-1: #080808;
+  --surface-tray: #050505;
+  --surface-2: rgba(255, 255, 255, 0.05);
+  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+  --accent-600: #4f1ad6;
+  --accent-400: #8059e3;
+  --accent-300: #a99bff;
+  --accent-grad: linear-gradient(180deg, var(--accent-600), var(--accent-400));
+  --accent-tint: linear-gradient(180deg, rgba(79, 26, 214, 0.08), rgba(153, 153, 153, 0.1));
+  --accent-glow: rgba(79, 26, 214, 0.38);
+  --text-1: #fff;
+  --text-2: rgba(255, 255, 255, 0.6);
+  --text-3: rgba(255, 255, 255, 0.5);
+  --text-dim: #666;
+  --btn-light: #efeeec;
+  --btn-glass: rgba(255, 255, 255, 0.15);
+
+  /* type */
+  --font: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-display: clamp(44px, 4vw + 24px, 80px);
+  --lh-display: 1.1;
+  --ls-display: -0.04em;
+  --fs-h2: clamp(34px, 2.6vw + 16px, 54px);
+  --lh-h2: 1;
+  --ls-h2: -0.03em;
+  --fs-statement: clamp(28px, 2.6vw + 12px, 48px);
+  --lh-statement: 1.17;
+  --ls-statement: -0.03em;
+  --fs-h3: clamp(26px, 1.4vw + 16px, 34px);
+  --fs-title: 18px;
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --lh-body: 26px;
+
+  /* spacing */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-7: 32px;
+  --s-8: 40px;
+  --s-9: 50px;
+  --s-10: 70px;
+  --container: 1200px;
+  --gutter: 24px;
+  --section-y: 80px;
+  --nav-h: 76px;
+
+  /* radius */
+  --r-btn: 10px;
+  --r-img: 12px;
+  --r-card: 20px;
+  --r-card-lg: 22px;
+  --r-panel: 30px;
+
+  /* shadow */
+  --shadow-card: 0 0.6px 1.3px -0.6px rgba(0, 0, 0, 0.09), 0 2.3px 5px -1.2px rgba(0, 0, 0, 0.1),
+    0 10px 22px -1.75px rgba(0, 0, 0, 0.16);
+  --shadow-badge: 0 0.6px 1.1px -0.4px rgba(79, 26, 214, 0.14), 0 2.3px 4.1px -0.8px rgba(79, 26, 214, 0.18),
+    0 10px 18px rgba(79, 26, 214, 0.38);
+  --inset-accent: inset 0 10px 10px -1px rgba(79, 26, 214, 0.15);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 200ms;
+  --dur-base: 300ms;
+  --dur-reveal: 700ms;
+}
+
+@media (min-width: 810px) {
+  :root {
+    --gutter: 50px;
+    --section-y: 100px;
+    --nav-h: 84px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --gutter: 80px;
+    --section-y: 120px;
+    --nav-h: 90px;
+  }
+}
